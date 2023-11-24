@@ -1,0 +1,42 @@
+.top-articles {
+  margin-bottom: 60px;
+
+  @include e(title) {
+    font-size: 20px;
+    margin: 0;
+  }
+
+  @include e(box) {
+    padding-top: 36px;
+    padding-bottom: 34px;
+    display: flex;
+    border-bottom: 1px solid $borderArtColor;
+  }
+
+  @include e(img) {
+    height: 70px;
+    width: 70px;
+    vertical-align: top;
+    background-color: $articleImgColor;
+    border-radius: 7px;
+    margin-right: 27px;
+    flex: 0 0 80px;
+  }
+
+  @include e(desc) {
+    display: flex;
+    flex-direction: column;
+  }
+
+  @include e(link) {
+    font-size: 18px;
+    text-decoration: none;
+    color: $articleColor;
+    padding-bottom: 14px;
+  }
+
+  @include e(span) {
+    font-size: 15px;
+    color: $redColor;
+  }
+}

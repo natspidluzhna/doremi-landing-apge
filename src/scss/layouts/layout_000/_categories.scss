@@ -1,0 +1,45 @@
+.categories {
+  text-transform: capitalize;
+
+  @include e(title) {
+    margin: 0;
+    margin-bottom: 33px;
+    font-size: 20px;
+  }
+
+  @include e(list) {
+    padding-left: 0;
+    margin-bottom: 24px;
+  }
+
+  @include e(item) {
+    padding: 9px 0;
+    border-bottom: 1px solid;
+    border-bottom-color: $borderArtColor;
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+  }
+
+  @include e(link) {
+    text-decoration: none;
+    padding-left: 22px;
+    color: $mainColor;
+
+    &:hover {
+      font-weight: 600;
+    }
+
+    &::before {
+      content: "";
+      height: 9px;
+      width: 9px;
+      position: absolute;
+      background-color: $borderArtColor;
+      border-radius: 50%;
+      left: 0;
+      top: 40%;
+    }
+  }
+}

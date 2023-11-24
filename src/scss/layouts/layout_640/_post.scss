@@ -1,0 +1,50 @@
+.post {
+  padding-top: 0;
+  margin-bottom: 46px;
+  border-radius: 22px;
+
+  @include e(top) {
+    padding: 36px 46px 27px;
+  }
+
+  @include e(title) {
+    margin-bottom: 19px;
+  }
+  @include e(meta) {
+    margin-bottom: 14px;
+  }
+}
+
+.post-menu {
+  display: flex;
+  padding-left: 0;
+  padding-bottom: 20px;
+  margin: 0;
+  margin-bottom: 14px;
+  border-bottom: 1px solid $borderPostMenu;
+
+  @include e(item) {
+    list-style: none;
+    @include m(admin) {
+      padding: 0 62px 0 16px;
+    }
+    @include m(rent) {
+      padding-right: 66px;
+    }
+  }
+
+  @include e(link) {
+    text-decoration: none;
+    color: $mainColor;
+
+    &:hover {
+      color: $redColor;
+    }
+  }
+}
+
+.post-bottom {
+  @include e(date) {
+    left: 15px;
+  }
+}

@@ -1,0 +1,8 @@
+.form-box {
+  padding-top: 17px;
+  order: 1;
+
+  @include e(form) {
+    width: 712px;
+  }
+}

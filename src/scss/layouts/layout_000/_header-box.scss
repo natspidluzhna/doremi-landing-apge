@@ -1,0 +1,24 @@
+.header-box {
+  display: flex;
+
+  @include e(logo) {
+    width: 53.43px;
+    height: 54.83px;
+  }
+}
+
+.title-box {
+  padding-left: 17px;
+  @include e(title) {
+    font-family: $fontFamilyNunito;
+    font-size: 33px;
+    font-weight: 800;
+    margin: 0;
+  }
+
+  @include e(span) {
+    font-family: $fontFamilyQuickSand;
+    text-transform: capitalize;
+    font-size: 14px;
+  }
+}

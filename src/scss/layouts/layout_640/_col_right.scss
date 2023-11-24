@@ -1,0 +1,35 @@
+.col {
+  @include m(right) {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 15%;
+  }
+}
+
+.categories {
+  flex: 1;
+  padding-left: 14px;
+}
+
+.top-articles {
+  flex: 1;
+}
+
+.banner {
+  flex-basis: 100%;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 24px 20px 29px;
+
+  @include e(img) {
+    order: 1;
+    flex: 0 0 250px;
+  }
+
+  @include e(meta) {
+    flex: 1;
+    flex: 0 0 297px;
+  }
+}

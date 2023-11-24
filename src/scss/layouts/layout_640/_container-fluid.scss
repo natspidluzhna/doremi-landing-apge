@@ -1,0 +1,15 @@
+.container-fluid {
+  margin-bottom: 13px;
+}
+
+.slogan {
+  display: flex;
+  flex-direction: row;
+  align-items: initial;
+  padding: 15px 0 19px;
+
+  @include e(icon) {
+    width: 150px;
+    height: 78px;
+  }
+}

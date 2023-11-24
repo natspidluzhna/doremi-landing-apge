@@ -1,0 +1,19 @@
+.language-box {
+  display: flex;
+
+  @include e(span) {
+    margin-right: 10px;
+    font-family: $fontFamilyQuickSand;
+    font-size: 16px;
+  }
+
+  @include e(img) {
+    width: 26.59px;
+    height: 17.26px;
+    margin-right: 12px;
+  }
+
+  @include e(icon) {
+    font-size: 16px;
+  }
+}

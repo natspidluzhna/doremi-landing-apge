@@ -1,0 +1,68 @@
+.banner {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 13px 15px 28px;
+  background-color: $bannerBgColor;
+  border-radius: 10px;
+
+  @include e(meta) {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  @include e(title) {
+    margin: 0;
+    font-size: 26px;
+    color: $white;
+    font-weight: 400;
+    margin-bottom: 43px;
+  }
+
+  @include e(text) {
+    margin: 0;
+    text-align: center;
+    font-size: 15px;
+    font-weight: 300;
+    color: $white;
+    margin-bottom: 43px;
+  }
+
+  @include e(img) {
+    order: -1;
+    width: 221.98px;
+    height: 136px;
+    margin-bottom: 10px;
+  }
+
+  @include e(btn) {
+    text-transform: uppercase;
+    width: 100%;
+    padding: 20px 0;
+    border-radius: 27px;
+    background: $redColor;
+    color: $white;
+    font-size: 16px;
+  }
+}
+
+.banner-form {
+  width: 100%;
+
+  @include e(form) {
+    margin-bottom: 10px;
+  }
+
+  @include e(control) {
+    width: 100%;
+    border: 1px solid $bannerBgColor;
+    padding: 20px 10px 20px 10px;
+    border-radius: 27px;
+    background-color: $white;
+    font-family: $baseFontFamily;
+    text-align: center;
+    font-size: $baseFontSize;
+    color: $colorBtn;
+  }
+}

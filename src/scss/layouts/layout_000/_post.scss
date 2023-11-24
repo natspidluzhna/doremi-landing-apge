@@ -1,0 +1,117 @@
+.post {
+  background-color: $articleBgColor;
+  padding-top: 15px;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+
+  @include e(top) {
+    padding: 30px 16px 20px 14px;
+  }
+
+  @include e(title) {
+    margin: 0;
+    margin-bottom: 8px;
+    font-size: 24px;
+    color: $articleColor;
+    text-transform: capitalize;
+  }
+
+  @include e(span) {
+    text-transform: initial;
+  }
+
+  @include e(meta) {
+    margin: 0;
+    margin-bottom: 32px;
+    font-weight: 300;
+    font-size: 18px;
+  }
+
+  @include e(btn) {
+    padding: 15px 37px;
+    border-radius: 24px;
+    background-color: $redColor;
+    color: $white;
+    text-transform: uppercase;
+    font-family: $fontFamilyQuickSand;
+    font-weight: 700;
+  }
+}
+
+.post-menu {
+  display: none;
+}
+
+.post-bottom {
+  order: -1;
+  position: relative;
+
+  @include e(img) {
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+    vertical-align: top;
+    border-radius: 12px;
+  }
+
+  @include e(date) {
+    position: absolute;
+    bottom: 0;
+    left: 12px;
+    padding: 10px 23px;
+    font-size: 30px;
+    background-color: $white;
+    border-radius: 12px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+  }
+
+  @include e(day) {
+    font-family: $fontFamilyNunito;
+    font-size: 30px;
+    font-weight: 700;
+    color: $redColor;
+  }
+
+  @include e(month) {
+    text-transform: uppercase;
+    font-size: 16px;
+    font-family: $fontFamilyQuickSand;
+  }
+} //.post-bottom
+
+.pagination {
+  padding-top: 26px;
+  margin-bottom: 55px;
+}
+.pagination-list {
+  margin: 0;
+  padding-left: 0;
+
+  @include e(item) {
+    display: inline-block;
+    text-align: center;
+    list-style: none;
+    font-size: 18px;
+    font-family: $fontFamilyQuickSand;
+  }
+
+  @include e(link) {
+    text-decoration: none;
+    display: block;
+    width: 50px;
+    height: 50px;
+    padding-top: 14px;
+    border-radius: 50%;
+    border: 1px solid $borderPagColor;
+    color: $mainColor;
+
+    &:hover {
+      background-color: $redColor;
+      color: $white;
+      font-weight: 700;
+    }
+  }
+}

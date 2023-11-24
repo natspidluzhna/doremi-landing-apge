@@ -1,0 +1,9 @@
+.form-box {
+  padding-top: initial;
+  flex: 1;
+  order: -1;
+
+  @include e(form) {
+    width: 100%;
+  } //.form
+}

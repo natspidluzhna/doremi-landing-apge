@@ -1,0 +1,41 @@
+.nav {
+  flex-basis: 100%;
+  order: 1;
+
+  @include e(icon) {
+    display: none;
+  }
+}
+
+.nav-box {
+  padding-top: 27px;
+  padding-left: 0;
+  display: flex;
+  margin: 0;
+
+  @include e(item) {
+    list-style: none;
+    padding: 0 30px;
+
+    @include m(sign) {
+      position: relative;
+      padding-left: 48px;
+    }
+  }
+
+  @include e(link) {
+    text-decoration: none;
+    color: $mainColor;
+
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+
+  @include e(icon) {
+    position: absolute;
+    left: 22px;
+    width: 18px;
+    height: 21px;
+  }
+}

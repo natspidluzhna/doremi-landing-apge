@@ -1,0 +1,18 @@
+.container-fluid {
+  margin-bottom: 42px;
+}
+
+.slogan {
+  justify-content: space-evenly;
+  padding: 19px 0 33px;
+
+  @include e(icon) {
+    width: 260px;
+    height: 128px;
+  }
+
+  @include e(title) {
+    font-size: rem(30px);
+    padding: 50px 0;
+  }
+}
